@@ -15,7 +15,7 @@
 		BE9D4D5921C16F6F007098B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE9D4D5721C16F6F007098B2 /* LaunchScreen.storyboard */; };
 		BE9D4D6421C16F6F007098B2 /* InternetAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D4D6321C16F6F007098B2 /* InternetAppTests.swift */; };
 		BE9D4D6F21C16F6F007098B2 /* InternetAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D4D6E21C16F6F007098B2 /* InternetAppUITests.swift */; };
-		BE9D4D8021C17138007098B2 /* Internet Terms.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BE9D4D7F21C17138007098B2 /* Internet Terms.pdf */; };
+		BEC5EB7421DD20CD00251310 /* InternetTerms.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BEC5EB7321DD20CD00251310 /* InternetTerms.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		BE9D4D6A21C16F6F007098B2 /* InternetAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InternetAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9D4D6E21C16F6F007098B2 /* InternetAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetAppUITests.swift; sourceTree = "<group>"; };
 		BE9D4D7021C16F6F007098B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE9D4D7F21C17138007098B2 /* Internet Terms.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Internet Terms.pdf"; path = "../../../../../Downloads/Internet Terms.pdf"; sourceTree = "<group>"; };
+		BEC5EB7321DD20CD00251310 /* InternetTerms.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = InternetTerms.pdf; path = ../../../../InternetTerms.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +132,7 @@
 				BE9D4D4E21C16F63007098B2 /* AppDelegate.swift */,
 				BE9D4D5521C16F6F007098B2 /* Assets.xcassets */,
 				BE9D4D5A21C16F6F007098B2 /* Info.plist */,
-				BE9D4D7F21C17138007098B2 /* Internet Terms.pdf */,
+				BEC5EB7321DD20CD00251310 /* InternetTerms.pdf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -260,8 +260,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE9D4D5921C16F6F007098B2 /* LaunchScreen.storyboard in Resources */,
+				BEC5EB7421DD20CD00251310 /* InternetTerms.pdf in Resources */,
 				BE9D4D5621C16F6F007098B2 /* Assets.xcassets in Resources */,
-				BE9D4D8021C17138007098B2 /* Internet Terms.pdf in Resources */,
 				BE9D4D5421C16F63007098B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

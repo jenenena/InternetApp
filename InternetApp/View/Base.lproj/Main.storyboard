@@ -9,16 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Internet Detail View Controller-->
         <scene sceneID="PrB-V3-sFb">
             <objects>
-                <viewController id="ZFX-Ly-RG8" sceneMemberID="viewController">
+                <viewController id="ZFX-Ly-RG8" customClass="InternetDetailViewController" customModule="InternetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vdp-Ar-8UK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wED-zc-mql">
-                                <rect key="frame" x="67" y="287" width="241" height="128"/>
+                                <rect key="frame" x="0.0" y="287" width="375" height="380"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -34,10 +34,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="cAb-aR-YtJ" firstAttribute="bottom" secondItem="wED-zc-mql" secondAttribute="bottom" constant="252" id="2Q1-hf-ks5"/>
+                            <constraint firstItem="cAb-aR-YtJ" firstAttribute="bottom" secondItem="wED-zc-mql" secondAttribute="bottom" id="2Q1-hf-ks5"/>
                             <constraint firstItem="xt5-Ub-EZx" firstAttribute="leading" secondItem="cAb-aR-YtJ" secondAttribute="leading" constant="166" id="2TT-ef-laH"/>
                             <constraint firstItem="wED-zc-mql" firstAttribute="width" secondItem="vdp-Ar-8UK" secondAttribute="width" id="4WZ-OT-cmb"/>
-                            <constraint firstItem="wED-zc-mql" firstAttribute="leading" secondItem="cAb-aR-YtJ" secondAttribute="leading" constant="67" id="CAc-4r-P17"/>
+                            <constraint firstItem="wED-zc-mql" firstAttribute="leading" secondItem="cAb-aR-YtJ" secondAttribute="leading" id="CAc-4r-P17"/>
                             <constraint firstItem="xt5-Ub-EZx" firstAttribute="centerX" secondItem="vdp-Ar-8UK" secondAttribute="centerX" id="LYb-QF-hjL"/>
                             <constraint firstItem="wED-zc-mql" firstAttribute="top" secondItem="xt5-Ub-EZx" secondAttribute="bottom" constant="75" id="Tgo-Eo-xO0"/>
                             <constraint firstItem="xt5-Ub-EZx" firstAttribute="top" secondItem="cAb-aR-YtJ" secondAttribute="top" constant="127" id="gX2-52-6kM"/>
@@ -46,6 +46,10 @@
                         <viewLayoutGuide key="safeArea" id="cAb-aR-YtJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="uEZ-4p-OTa"/>
+                    <connections>
+                        <outlet property="screenTitle" destination="xt5-Ub-EZx" id="q7u-II-2Ni"/>
+                        <outlet property="webViewer" destination="wED-zc-mql" id="gh7-wb-k73"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AOx-Le-NpB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,7 +58,7 @@
         <!--Root View Controller-->
         <scene sceneID="hgq-XP-IgA">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="hR1-YH-1Nl" sceneMemberID="viewController">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="hR1-YH-1Nl" customClass="InternetMasterViewController" customModule="InternetApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tbT-2K-Q8z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
