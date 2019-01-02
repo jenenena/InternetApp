@@ -16,14 +16,40 @@
                     <view key="view" contentMode="scaleToFill" id="vdp-Ar-8UK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wED-zc-mql">
+                                <rect key="frame" x="67" y="287" width="241" height="128"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xt5-Ub-EZx">
+                                <rect key="frame" x="166" y="191" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cAb-aR-YtJ" firstAttribute="bottom" secondItem="wED-zc-mql" secondAttribute="bottom" constant="252" id="2Q1-hf-ks5"/>
+                            <constraint firstItem="xt5-Ub-EZx" firstAttribute="leading" secondItem="cAb-aR-YtJ" secondAttribute="leading" constant="166" id="2TT-ef-laH"/>
+                            <constraint firstItem="wED-zc-mql" firstAttribute="width" secondItem="vdp-Ar-8UK" secondAttribute="width" id="4WZ-OT-cmb"/>
+                            <constraint firstItem="wED-zc-mql" firstAttribute="leading" secondItem="cAb-aR-YtJ" secondAttribute="leading" constant="67" id="CAc-4r-P17"/>
+                            <constraint firstItem="xt5-Ub-EZx" firstAttribute="centerX" secondItem="vdp-Ar-8UK" secondAttribute="centerX" id="LYb-QF-hjL"/>
+                            <constraint firstItem="wED-zc-mql" firstAttribute="top" secondItem="xt5-Ub-EZx" secondAttribute="bottom" constant="75" id="Tgo-Eo-xO0"/>
+                            <constraint firstItem="xt5-Ub-EZx" firstAttribute="top" secondItem="cAb-aR-YtJ" secondAttribute="top" constant="127" id="gX2-52-6kM"/>
+                            <constraint firstItem="xt5-Ub-EZx" firstAttribute="centerX" secondItem="wED-zc-mql" secondAttribute="centerX" id="jDC-e1-Xq8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cAb-aR-YtJ"/>
                     </view>
-                    <navigationItem key="navigationItem" id="yN9-KE-SJU"/>
+                    <navigationItem key="navigationItem" id="uEZ-4p-OTa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AOx-Le-NpB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="844" y="-43.628185907046479"/>
+            <point key="canvasLocation" x="844" y="-44.527736131934034"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="hgq-XP-IgA">
@@ -76,7 +102,7 @@
                 <splitViewController id="OUZ-Mt-nox" sceneMemberID="viewController">
                     <connections>
                         <segue destination="nsu-Pt-b5U" kind="relationship" relationship="masterViewController" id="NOP-rI-acf"/>
-                        <segue destination="y47-Ig-xC7" kind="relationship" relationship="detailViewController" id="46r-3m-zLN"/>
+                        <segue destination="beP-2D-11j" kind="relationship" relationship="detailViewController" id="46r-3m-zLN"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zOc-7M-fVL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -84,20 +110,20 @@
             <point key="canvasLocation" x="-1046" y="-408"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="eaN-vq-phF">
+        <scene sceneID="Tlc-Wx-xGu">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y47-Ig-xC7" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="beP-2D-11j" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="40p-ZG-1g7">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lSj-im-vgB">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="ZFX-Ly-RG8" kind="relationship" relationship="rootViewController" id="KaG-VE-6SI"/>
+                        <segue destination="ZFX-Ly-RG8" kind="relationship" relationship="rootViewController" id="iMj-gF-FcB"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VPV-tz-q7B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E8q-Og-UrV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-95.200000000000003" y="-44.527736131934034"/>
         </scene>
