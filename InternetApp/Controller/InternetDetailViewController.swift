@@ -33,7 +33,7 @@ class InternetDetailViewController: UIViewController
     {
         if (detailTitle != nil && screenTitle != nil && webViewer != nil)
         {
-            if (detailTitle?.range(of: "Definitions",  options: .caseInsensitive != nil)
+            if (detailTitle?.range(of: "Definitions",  options: .caseInsensitive != nil))
             {
                 loadPDF()
             }
@@ -44,7 +44,7 @@ class InternetDetailViewController: UIViewController
                 loadURL (webAddress: detailAddress!)
                 }
             }
-            ScreenTitle?.text = detailTitle
+            screenTitle?.text = detailTitle   //or ScreenTitle??
         }
     }
 
